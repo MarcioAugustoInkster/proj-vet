@@ -1,0 +1,127 @@
+:root {
+  font-family: 'Calibri';
+  --aqua-marine: #00a0ae;
+  --cyan-dark: #135c65;
+  --yellow: #ffe600;
+  --yellow-green: #a6ff00;
+  --blue: #0000aa;
+  --red: #c00;
+  --white: #fff;
+  --soft-white: #eee;
+  --low-grey: #ccc;
+  --grey: #aaa;
+  --strong-grey: #666;
+  --soft-black: #333;
+  --black: #000;
+  background-color: var(--white);
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+.main {
+  margin: 16px;
+  position: relative;
+}
+.section {
+  padding: 16px 8px;
+  border: 1px solid var(--low-grey);
+  background-color: var(--soft-white);
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+}
+.section-header {
+  margin: 0 auto 16px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.section-header > .section-h1,
+.section-header > .section-h4 {
+  text-align: center;
+  line-height: 1;
+}
+.section-header > .section-h1 {
+  font-family: 'Lucida Sans Unicode';
+  font-size: 32px;
+  margin-bottom: 0.5rem;
+  color: var(--cyan-dark);
+  text-shadow: 1px 1px 2px var(--strong-grey);
+}
+.section-header > .section-h4 {
+  font-family: 'Calibri';
+  font-size: 18px;
+  margin-bottom: 0.25rem;
+}
+.section-info {
+  display: flex;
+  align-items: center;
+  margin: 0 8px;
+  padding-left: 8px;
+}
+.section-info > .info-danger {
+  display: flex;
+  align-items: center;
+  color: var(--red);
+  font-family: 'Candara';
+  font-weight: bold;
+  padding-right: 4px;
+}
+.section-info > .info-h4 {
+  font-family: 'Lucida Sans Unicode';
+  font-size: 14px;
+  font-weight: normal;
+}
+table {
+  border-collapse: collapse;
+}
+a {
+  display: block;
+  text-decoration: none;
+}
+.hr-2 {
+  margin: 32px 110px;
+}
+.f-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.f-row > .f-col {
+  margin: 6px;
+  width: calc(100% - 12px);
+}
+.f-col.f-col-xs {
+  width: calc(25% - 12px);
+}
+.f-col.f-col-sm {
+  width: calc(33.33% - 12px);
+}
+.f-col.f-col-md {
+  width: calc(50% - 12px);
+}
+.f-col.f-col-lg {
+  width: calc(66.66% - 12px);
+}
+.f-col.f-col-xl {
+  width: calc(75% - 12px);
+}
+.form {
+  position: relative;
+  margin: 0 auto;
+  width: 500px;
+}
+.form-group {
+  background-color: var(--soft-white);
+  user-select: none;
+}
+.form-panel {
+  display: flex;
+  justify-content: space-between;
+  margin: 16px 6px;
+}
+@media screen and (max-width: 642px) {
+  .form {
+    width: calc(100% - 16px);
+  }
+}

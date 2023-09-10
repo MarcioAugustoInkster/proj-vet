@@ -1,0 +1,19 @@
+.button {
+    font-family: 'Candara';
+    font-size: 18px;
+    padding: 8px 16px;
+    background-color: var(--aqua-marine);
+    color: var(--white);
+    border: 1px solid var(--grey);
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    text-shadow: 1px 1px 1px var(--strong-grey);
+    box-shadow: 2px 2px 4px var(--strong-grey);
+    outline: none;
+}
+.button:active {
+    background-color: var(--cyan-dark);
+    text-shadow: 1px 1px 1px var(--soft-black);
+    box-shadow: 2px 2px 4px inset var(--black);
+}

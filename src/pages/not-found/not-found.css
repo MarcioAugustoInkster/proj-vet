@@ -1,0 +1,29 @@
+.section-nf {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+.nf-panel-bg {
+    width: calc(433px - 108px);
+    height: calc(277px - 55px);
+    background-image: url('../../assets/images/932_empty-hatched-egg-shell.jpg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.nf-title-xl, .nf-title-md {
+    line-height: 1;
+    text-shadow: 2px 2px 4px var(--grey);
+}
+.nf-title-xl {
+    font-family: 'Tahoma';
+    font-size: 72px;
+    color: var(--red);
+    margin-bottom: 8px;
+}
+.nf-title-md {
+    font-family: 'Lucida Sans Unicode';
+    font-size: 26px;
+    color: var(--soft-black);
+}

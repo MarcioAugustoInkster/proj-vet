@@ -1,0 +1,73 @@
+@mixin border-radius($size) {
+    border-radius: $size;
+    -webkit-border-radius: $size;
+    -moz-border-radius: $size;
+}
+
+.flex-block-view {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__block-item {
+        display: flex;
+        align-items: center;
+        width: 380px;
+        margin: 6px 0;
+        padding: 12px 8px;
+        background-color: var(--cyan-dark);
+        border: 1px solid var(--strong-grey);
+        box-shadow: 4px 4px 6px var(--strong-grey);
+        @include border-radius(6px);
+        &__item-image {
+            border: 1px solid var(--low-grey);
+            @include border-radius(50%);
+        }
+        &__item-content {
+            height: 110px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: space-between;
+            &__content-title {
+                font-family: 'Calibri';
+                font-size: 16px;
+                text-transform: capitalize;
+                color: var(--white);
+                border-bottom: 1px solid var(--soft-white);
+                text-shadow: 1px 1px 2px var(--strong-grey);
+                padding: 2px;
+                line-height: 1;
+            }
+            &__content-text {
+                font-family: 'Lucida Sans Unicode';
+                text-align: justify;
+                font-size: 13px;
+                margin: 0 8px 4px 10px;
+                text-shadow: 1px 1px 2px var(--strong-grey);
+                color: var(--white);
+                line-height: 1.2;
+            }
+            &__content-link {
+                position: relative;
+                display: flex;
+                text-transform: capitalize;
+                text-decoration: none;
+                color: var(--yellow-green);
+                padding-right: 12px;
+                text-shadow: 1px 1px 2px var(--strong-grey);
+                &:active, &:hover {
+                    text-decoration: underline;
+                }
+            }
+            &__content-link::after {
+                position: absolute;
+                display: block;
+                content: '>';
+                top: 0;
+                right: 0;
+                height: 100%;
+                font-weight: bold;
+            }
+        }
+    }
+}

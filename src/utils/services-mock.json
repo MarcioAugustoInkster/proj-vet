@@ -1,0 +1,119 @@
+{
+    "result": [
+        {
+            "code": 739920,
+            "crmv": "SC 38101",
+            "fullname": "Wagner Alvez de Souza",
+            "type": "vet",
+            "location": {
+                "zipcode": "89028-220",
+                "address": "Ângelo Dias",
+                "number": "107",
+                "district": "Vila Itoupava",
+                "city": "Blumenau",
+                "state": "SC"
+            },
+            "schedules": [
+                {
+                    "weekday": "segunda á sexta",
+                    "hours": [
+                        { "from": "08:00", "to": "12:00" },
+                        { "from": "13:30", "to": "17:30" }
+                    ]
+                },
+                {
+                    "weekday": "sábado",
+                    "hours": [
+                        { "from": "09:00", "to": "12:30" }
+                    ]
+                }
+            ]
+        },
+        {
+            "code": 43827,
+            "crmv": "SC 3382",
+            "fullname": "Luiz Amaral Santos",
+            "type": "vet",
+            "location": {
+                "zipcode": "89210-370",
+                "address": "Almriante Fonseca",
+                "number": "23",
+                "district": "Centro",
+                "city": "Blumenau",
+                "state": "SC"
+            },
+            "schedules": [
+                {
+                    "weekday": "segunda á sábado",
+                    "hours": [
+                        { "from": "08:00", "to": "12:00" },
+                        { "from": "13:00", "to": "17:00" }
+                    ]
+                },
+                {
+                    "weekday": "plantão 24hrs",
+                    "hours": []
+                }
+            ]
+        },
+        {
+            "code": 113639,
+            "crmv": "SC 57251",
+            "fullname": "Clínica MaisVet",
+            "type": "cli",
+            "location": {
+                "zipcode": "89042-060",
+                "address": "Pedro Zimmermann",
+                "number": "401 - Sala 202",
+                "district": "Salto do Norte",
+                "city": "Blumenau",
+                "state": "SC"
+            },
+            "schedules": [
+                {
+                    "weekday": "segunda á sexta",
+                    "hours": [
+                        { "from": "08:00", "to": "11:00" },
+                        { "from": "12:00", "to": "17:00" }
+                    ]
+                },
+                {
+                    "weekday": "sábado",
+                    "hours": [
+                        { "from": "08:00", "to": "12:00" },
+                        { "from": "13:00", "to": "16:00" }
+                    ]
+                }
+            ]
+        },
+        {
+            "code": 739920,
+            "crmv": "SC 38101",
+            "fullname": "Franciele Menes Razzaghi",
+            "type": "vet",
+            "location": {
+                "zipcode": "89126-330",
+                "address": "Enrique Afonso de Souza",
+                "number": "9",
+                "district": "Fortaleza",
+                "city": "Blumenau",
+                "state": "SC"
+            },
+            "schedules": [
+                {
+                    "weekday": "segunda á sexta",
+                    "hours": [
+                        { "from": "08:00", "to": "12:00" },
+                        { "from": "13:30", "to": "17:30" }
+                    ]
+                },
+                {
+                    "weekday": "sábado",
+                    "hours": [
+                        { "from": "09:00", "to": "12:30" }
+                    ]
+                }
+            ]
+        }
+    ]
+}

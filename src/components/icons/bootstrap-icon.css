@@ -1,0 +1,26 @@
+.b-icon-white, .b-icon-black {
+    display: flex;
+    align-items: center;
+}
+.b-icon-white {
+    color: var(--soft-white);
+    text-shadow: 1px 1px 2px var(--strong-grey);
+}
+.b-icon-black {
+    color: var(--soft-black);
+}
+.b-size-1 {
+    font-size: 16px;
+}
+.b-size-2 {
+    font-size: 24px;
+}
+.b-size-3 {
+    font-size: 32px;
+}
+.b-size-4 {
+    font-size: 40px;
+}
+.b-size-5 {
+    font-size: 48px;
+}

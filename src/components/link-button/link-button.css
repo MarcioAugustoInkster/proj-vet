@@ -1,0 +1,25 @@
+.link-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-family: 'Arial';
+    font-size: 16px;
+    text-transform: capitalize;
+    text-decoration: none;
+    padding: 0 4px 0 16px;
+    color: var(--soft-black);
+}
+.link-button.lk-arrow::before {
+    position: absolute;
+    content: '<';
+    top: -2px;
+    left: 0;
+    font-family: 'Verdana';
+    font-size: 16px;
+    font-weight: bold;
+
+}
+.link-button:active, .link-button:hover {
+    color: var(--blue);
+    text-decoration: underline;
+}

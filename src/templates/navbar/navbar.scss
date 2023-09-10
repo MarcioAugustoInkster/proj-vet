@@ -1,0 +1,80 @@
+.header {
+    padding: 0 .6rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--aqua-marine);
+    box-shadow: 2px 2px 4px var(--strong-grey);
+    .logo-img {
+        font-family: 'Candara';
+        font-size: 32px;
+        font-weight: bold;
+        font-style: italic;
+        padding: 0 .65rem;
+        color: var(--soft-white);
+        border: 1px solid var(--white);
+        text-shadow: 2px 2px 2px var(--black);
+        box-shadow: 2px 2px 2px var(--strong-grey);
+        border-radius: .25rem 1.75rem;
+    }
+    &__nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 60%;
+        margin: .65rem 0 .65rem 0rem;
+        &__menu {
+            display: flex;
+            li {
+                list-style: none;
+                &:not(:first-child) {
+                    margin-left: 16px;
+                }
+                a {
+                    font-family: 'Candara';
+                    font-weight: bold;
+                    border-bottom: 1px solid transparent;
+                    padding: .2rem .25rem;
+                    color: var(--soft-white);
+                    &:active, &:hover {
+                        border-color: var(--yellow-green);
+                    }
+                }
+            }
+        }
+        &__item {
+            display: flex;
+            line-height: 1;
+            &__box {
+                position: relative;
+                box-sizing: content-box;
+                &:not(:first-child)::before {
+                    position: absolute;
+                    content: '|';
+                    top: 50%;
+                    left: -10px;
+                    height: 100%;
+                    font-family: 'Arial';
+                    color: var(--cyan-dark);
+                    transform: translateY(-50%);
+                }
+                &:not(:last-child) {
+                    margin-right: 16px;
+                }
+                &__link {
+                    display: flex;
+                    align-items: center;
+                    .link-text {
+                        color: var(--soft-white);
+                        margin-left: 2px;
+                        text-shadow: 1px 1px 1px var(--strong-grey);
+                    }
+                    &:active > .link-text, &:hover > .link-text,
+                    &:active > i, &:hover > i {
+                        color: var(--yellow-green);
+                    }
+                }
+            }
+        }
+    }
+}
