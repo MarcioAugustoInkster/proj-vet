@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import PropTypes from 'prop-types';
 import './link-button.css';
 
-const LinkButton = ({href, text, hasArrow}) => {
+const LinkButton = ({href, text, hasArrow = false}) => {
   return <Link to={href} className={`link-button${hasArrow ? ' lk-arrow' : ''}`} role="button">{text}</Link>
 }
 

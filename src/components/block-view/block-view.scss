@@ -11,12 +11,12 @@
     &__block-item {
         display: flex;
         align-items: center;
-        width: 380px;
+        width: 400px;
         margin: 6px 0;
         padding: 12px 8px;
         background-color: var(--cyan-dark);
         border: 1px solid var(--strong-grey);
-        box-shadow: 4px 4px 6px var(--strong-grey);
+        box-shadow: 2px 2px 4px var(--strong-grey);
         @include border-radius(6px);
         &__item-image {
             border: 1px solid var(--low-grey);
@@ -40,7 +40,6 @@
             }
             &__content-text {
                 font-family: 'Lucida Sans Unicode';
-                text-align: justify;
                 font-size: 13px;
                 margin: 0 8px 4px 10px;
                 text-shadow: 1px 1px 2px var(--strong-grey);
@@ -68,6 +67,11 @@
                 height: 100%;
                 font-weight: bold;
             }
+        }
+    }
+    @media screen and (max-width: 456px) {
+        &__block-item {
+            width: auto;
         }
     }
 }

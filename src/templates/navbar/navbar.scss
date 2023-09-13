@@ -1,10 +1,27 @@
 .header {
-    padding: 0 .6rem;
+    padding: 4px 16px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: var(--aqua-marine);
     box-shadow: 2px 2px 4px var(--strong-grey);
+    &__nav-control {
+        display: none;
+        background-color: transparent;
+        border: 1px solid var(--soft-white);
+        border-radius: 4px;
+        cursor: pointer;
+        outline: none;
+        &:hover > .b-icon {
+            color: var(--yellow-green);
+        }
+        &:hover {
+            border-color: var(--yellow-green);
+        }
+    }
+    &__nav-attr {
+        display: none;
+    }
     .logo-img {
         font-family: 'Candara';
         font-size: 32px;
@@ -21,8 +38,12 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        width: 60%;
-        margin: .65rem 0 .65rem 0rem;
+        width: 65%;
+        height: auto;
+        max-height: 600px;
+        transition: max-height .5s ease-out;
+        margin: .65rem 0;
+        overflow: hidden;
         &__menu {
             display: flex;
             li {
@@ -72,6 +93,43 @@
                     &:active > .link-text, &:hover > .link-text,
                     &:active > i, &:hover > i {
                         color: var(--yellow-green);
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 768px) {
+        display: block;
+        &__nav-control {
+            display: block;
+            position: relative;
+            float: right;
+            margin-top: -32px;
+        }
+        &__nav-attr:checked ~ &__nav {
+            max-height: 0;
+        }
+        &__nav {
+            display: block;
+            width: 100%;
+            margin: 0;
+            &__menu {
+                flex-direction: column;
+                align-items: center;
+                li {
+                    margin: 0 !important;
+                }
+            }
+            &__item {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-top: 10px;
+                &__box {
+                    margin: 0 !important;
+                    line-height: 1.6;
+                    &::before {
+                        display: none;
                     }
                 }
             }
