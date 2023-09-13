@@ -10,6 +10,7 @@
   --soft-white: #eee;
   --low-grey: #ccc;
   --grey: #aaa;
+  --grey-blue: #54656f;
   --strong-grey: #666;
   --soft-black: #333;
   --black: #000;
@@ -20,7 +21,7 @@
   padding: 0;
 }
 .main {
-  margin: 16px;
+  margin: 16px 8px 32px 8px;
   position: relative;
 }
 .section {
@@ -79,6 +80,39 @@ table {
 a {
   display: block;
   text-decoration: none;
+}
+strong {
+  color: var(--grey-blue);
+}
+.ml-1 {
+  margin-left: 9px;
+}
+.ml-2 {
+  margin-left: 18px;
+}
+.ml-3 {
+  margin-left: 27px;
+}
+.ml-4 {
+  margin-left: 36px;
+}
+.ml-5 {
+  margin-left: 45px;
+}
+.mr-1 {
+  margin-right: 9px;
+}
+.mr-2 {
+  margin-right: 18px;
+}
+.mr-3 {
+  margin-right: 27px;
+}
+.mr-4 {
+  margin-right: 36px;
+}
+.mr-5 {
+  margin-right: 45px;
 }
 .hr-2 {
   margin: 32px 110px;

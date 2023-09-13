@@ -1,0 +1,149 @@
+.section-vet {
+    position: relative;
+    &__container {
+        margin: 0 auto;
+        width: 60%;
+        border: 1px solid var(--low-grey);
+        border-radius: 6px;
+        -webkit-border-radius: 6px;
+        -moz-border-radius: 6px;
+        box-shadow: 2px 2px 4px var(--low-grey);
+        &__bg-view {
+            height: 120px;
+            background-image: url('../../assets/images/backgrounds/birds-sky-bg.png');
+            background-position: top center;
+            background-size: cover;
+            box-shadow: 0 2px 4px var(--grey);
+        }
+        &__group {
+            display: flex;
+            &__aside {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                &__portrait {
+                    display: flex;
+                    box-sizing: border-box;
+                    margin: -80px 16px 0 16px;
+                    border: 1px solid var(--low-grey);
+                    border-radius: 50%;
+                    -webkit-border-radius: 50%;
+                    -moz-border-radius: 50%;
+                    box-shadow: 2px 2px 4px var(--grey);
+                    img {
+                        border-radius: 50%;
+                        -webkit-border-radius: 50%;
+                        -moz-border-radius: 50%;
+                    }
+                }
+                &__list {
+                    margin: 16px 0;
+                    li {
+                        list-style: none;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        margin-bottom: 8px;
+                        line-height: 1;
+                        .l-label, .l-info {
+                            font-family: 'Tahoma';
+                            font-size: 16px;
+                            text-align: center;
+                        }
+                        .l-label {
+                            color: var(--strong-grey);
+                        }
+                    }
+                }
+            }
+            &__content {
+                width: 100%;
+                &__header {
+                    margin-top: 16px;
+                    &__h1, &__h4 {
+                        font-family: 'Tahoma';
+                        padding: 2px 0;
+                        line-height: 1;
+                    }
+                    &__h1 {
+                        font-size: 32px;
+                        color: var(--aqua-marine);
+                        margin-bottom: 4px;
+                    }
+                    &__h4 {
+                        font-size: 16px;
+                        color: var(--cyan-dark);
+                        margin-left: 16px
+                    }
+                }
+                &__panel {
+                    margin-top: 16px;
+                    &__selection {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        margin-bottom: 32px;
+                        &__title {
+                            color: var(--grey-blue);
+                        }
+                        &__p-flex {
+                            display: flex;
+                            align-items: flex-start;
+                            &__view {
+                                font-family: 'Arial';
+                                font-size: 24px;
+                                font-weight: bold;
+                                color: var(--grey-blue);
+                                margin-right: 6px;
+                                line-height: 1;
+                            }
+                            &__f-grid {
+                                display: flex;
+                                box-sizing: content-box;
+                                overflow: hidden;
+                                &__block {
+                                    margin: 0 2px;
+                                    line-height: 1;
+                                    .b-icon {
+                                        color: var(--aqua-marine);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    &__section {
+                        margin-bottom: 16px;
+                        &__title {
+                            font-family: 'Lucida Sans Unicode';
+                            font-size: 32px;
+                            border-bottom: 2px solid var(--grey);
+                            margin: 0 16px 8px 0;
+                            padding-bottom: 4px;
+                            color: var(--soft-black);
+                            line-height: 1;
+                        }
+                        &__s-row {
+                            display: flex;
+                            flex-direction: column;
+                            &__s-col {
+                                display: flex;
+                                line-height: 1.8;
+                                &__text, &__label {
+                                    font-family: 'Tahoma';
+                                    font-size: 16px;
+                                }
+                                &__text {
+                                    color: var(--soft-black);
+                                }
+                                &__label {
+                                    margin-right: 4px;
+                                    text-transform: capitalize;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -17,13 +17,14 @@
             transform: translateY(-50%);
             width: 90px;
             height: 90px;
-            background-color: var(--soft-black);
+            background-color: var(--cyan-dark);
             border-radius: 50%;
             z-index: 1;
             &__text {
                 font-family: 'Lucida Sans Unicode';
                 font-size: 25px;
-                color: var(--soft-white);
+                color: var(--white);
+                text-shadow: 2px 2px 2px var(--soft-black);
                 line-height: 1;
             }
         }
@@ -93,7 +94,7 @@
                     .input-login::placeholder {
                         color: var(--grey);
                     }
-                    .input-login:focus ~ label > .b-icon-black {
+                    .input-login:focus ~ label > .b-icon {
                         color: var(--aqua-marine);
                     }
                 }
@@ -111,7 +112,7 @@
                         color: var(--soft-white);
                         border: 1px solid var(--grey);
                         text-shadow: 1px 1px 1px var(--soft-black);
-                        box-shadow: 2px 2px 4px var(--grey);
+                        box-shadow: 2px 2px 2px var(--low-grey);
                         border-radius: 6px;
                         -webkit-border-radius: 6px;
                         -moz-border-radius: 6px;

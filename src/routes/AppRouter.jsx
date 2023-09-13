@@ -8,6 +8,7 @@ import SignIn from "../pages/account/signin/SignIn";
 import Schedule from "../pages/schedule/Schedule";
 import Example from "../pages/account/example/Example";
 import AnimalEnroll from "../pages/account/enroll/AnimalEnroll";
+import VetProfile from "../pages/profile-vet/VetProfile";
 
 const routes = createBrowserRouter([
     {
@@ -18,6 +19,7 @@ const routes = createBrowserRouter([
             { path: 'home', element: <Home /> },
             { path: 'agendamento', element: <Schedule /> },
             { path: 'contato', element: <Contact /> },
+            { path: 'perfil-veterinario/:code', element: <VetProfile /> },
             { path: 'conta/cadastro', element: <UserRegister /> },
             { path: 'conta/login', element: <SignIn /> },
             { path: 'conta/example', element: <Example /> },

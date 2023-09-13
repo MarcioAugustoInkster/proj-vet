@@ -4,9 +4,10 @@ import picFemaleVetDoctor from '../../assets/images/backgrounds/pet-vet-cockatie
 import picSmartphoneWithGpsNavigator from '../../assets/images/backgrounds/smartphone-with-gps-navigator.jpg';
 import BootstrapIcon from '../../components/icons/BootstrapIcon';
 import { zpiCodeMask } from '../../utils/FieldMask';
-import { Fragment, useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import servicesMock from '../../utils/services-mock.json';
 import { apiRouter } from '../../api/apiRouter';
+import ResultView from '../../components/result-view/ResultView';
 
 const Home = () => {
     const [zipCode, setZipCode] = useState('');
@@ -64,7 +65,7 @@ const Home = () => {
                 if (status === 200 && !data['erro']) {
                     const resultData = servicesMock?.result.length > 0 ? servicesMock.result : [];
                     if (resultData.length > 0) {
-                        timeOut(resultData, '', 3000);
+                        timeOut(resultData, '', 2000);
                     }
                 } else {
                     timeOut([], 'Não há registros', 1000);
@@ -93,7 +94,8 @@ const Home = () => {
             />
             <hr className="hr-2" />
             <div className="grid-content">
-                <h1 className="content-header">Busca rápida</h1>
+                <h1 className="content-h1">Busca rápida</h1>
+                <h4 className="content-h4">Informe seu CEP abaixo para localizarmos as áreas mais próximas de sua região</h4>
                 <form onSubmit={onClickSearch}>
                     <div className="grid-control">
                         <div className="input-box">
@@ -119,53 +121,11 @@ const Home = () => {
                 </div>
                 :
                 results.length > 0 ?
-                <div className="grid-result">
-                    <h2 className="grid-title">Resultados: {results.length}</h2>
-                    {results.map((item, index) =>
-                    <div className="grid-row" key={index}>
-                        <div className="grid-col">
-                            <div className="col-group">
-                                <strong className="group-head">
-                                    {item.type === 'vet' ? 'Veterinário(a):' : 'Clínica/Consultório:'}
-                                </strong>
-                                <span className="group-data">{item.fullname}</span>
-                            </div>
-                            <div className="col-group">
-                                <strong className="group-head">CRMV:</strong>
-                                <span className="group-data">{item.crmv}</span>
-                            </div>
-                            <div className="col-group">
-                                <strong className="group-head">CEP:</strong>
-                                <span className="group-data">{item.location.zipcode}</span>
-                            </div>
-                           <div className="col-group">
-                                <strong className="group-head">Endereço:</strong>
-                                <span className="group-data">{item.location.address}</span>
-                            </div>
-                            <div className="col-group">
-                                <strong className="group-head">Bairro:</strong>
-                                <span className="group-data">{item.location.district}</span>
-                            </div>
-                            <div className="col-group">
-                                <strong className="group-head">Cidade:</strong>
-                                <span className="group-data">{item.location.city} - {item.location.state}</span>
-                            </div>
-                        </div>
-                        <div className="grid-col">
-                            {item.schedules.map((obj, jndex) =>
-                            <Fragment key={jndex}>
-                                <div className="col-group">
-                                    <strong className="group-head">Atendimento {(jndex + 1)}:</strong>
-                                    <span className="group-data">{obj.weekday}</span>
-                                </div>
-                                {obj.hours.length > 0 && obj.hours.map((res, kndex) =>
-                                <div className="col-group" key={kndex}>
-                                    <strong className="group-head">Horário {(kndex + 1)}:</strong>
-                                    <span className="group-data">{res.from} até {res.to}</span>
-                                </div>)}
-                            </Fragment>)}
-                        </div>
-                    </div>)}
+                <div className="result-view">
+                    <h2 className="result-title">Encontrado {results.length} resultados</h2>
+                    <div className="view-grid">
+                        {results.map((item, index) => <ResultView data={item} key={index} />)}
+                    </div>
                 </div>
                 :
                 <div className="grid-status">

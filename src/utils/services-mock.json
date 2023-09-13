@@ -1,119 +1,121 @@
 {
     "result": [
         {
-            "code": 739920,
+            "code": "vet-49213",
             "crmv": "SC 38101",
             "fullname": "Wagner Alvez de Souza",
-            "type": "vet",
-            "location": {
-                "zipcode": "89028-220",
-                "address": "Ângelo Dias",
-                "number": "107",
-                "district": "Vila Itoupava",
-                "city": "Blumenau",
-                "state": "SC"
-            },
-            "schedules": [
-                {
-                    "weekday": "segunda á sexta",
-                    "hours": [
-                        { "from": "08:00", "to": "12:00" },
-                        { "from": "13:30", "to": "17:30" }
-                    ]
+            "image_url_sm": "https://fastly.picsum.photos/id/4/100/100.jpg?hmac=x3tIz-N_whP5ybdkY0nYBPCHpeKotxw27aFnXYusAUc",
+            "image_url_md": "https://fastly.picsum.photos/id/4/200/200.jpg?hmac=ozRrjh7SMobdmKcOU0f5sWYszFW9Or1c90qeq7uqtuw",
+            "occupation": "Aves Exóticas",
+            "experience": "+5",
+            "start_date": "19 ago 2018",
+            "available": true,
+            "evaluation": 4.5,
+            "info": {
+                "location": {
+                    "zipcode": "89028-220",
+                    "address": "Ângelo Dias",
+                    "number": "107",
+                    "district": "Vila Itoupava",
+                    "city": "Blumenau",
+                    "state": "SC"
                 },
-                {
-                    "weekday": "sábado",
-                    "hours": [
-                        { "from": "09:00", "to": "12:30" }
-                    ]
-                }
-            ]
+                "schedules": [
+                    {
+                        "weekday": "segunda á sexta",
+                        "hours": [
+                            { "from": "08:00", "to": "12:00" },
+                            { "from": "13:30", "to": "17:30" }
+                        ]
+                    },
+                    {
+                        "weekday": "sábado",
+                        "hours": [
+                            { "from": "09:00", "to": "12:30" }
+                        ]
+                    }
+                ]
+            }
         },
         {
-            "code": 43827,
-            "crmv": "SC 3382",
-            "fullname": "Luiz Amaral Santos",
-            "type": "vet",
-            "location": {
-                "zipcode": "89210-370",
-                "address": "Almriante Fonseca",
-                "number": "23",
-                "district": "Centro",
-                "city": "Blumenau",
-                "state": "SC"
-            },
-            "schedules": [
-                {
-                    "weekday": "segunda á sábado",
-                    "hours": [
-                        { "from": "08:00", "to": "12:00" },
-                        { "from": "13:00", "to": "17:00" }
-                    ]
+            "code": "vet-60295",
+            "crmv": "SC 58103",
+            "fullname": "Claudia Antes Almeida",
+            "image_url_sm": "https://fastly.picsum.photos/id/64/100/100.jpg?hmac=KlL_yWhDcqYoYuIVfC3dk5Lu8Xlel2iskAkgOiDodis",
+            "image_url_md": "https://fastly.picsum.photos/id/64/200/200.jpg?hmac=lJVbDn4h2axxkM72s1w8X1nQxUS3y7li49cyg0tQBZU",
+            "occupation": "Aves Exóticas e Domésticas",
+            "experience": "8",
+            "start_date": "11 fev 2009",
+            "available": true,
+            "evaluation": 4.7,
+            "info": {
+                "location": {
+                    "zipcode": "88030-185",
+                    "address": "Coronel Fraudi Lucker",
+                    "number": "25",
+                    "district": "Centro",
+                    "city": "Blumenau",
+                    "state": "SC"
                 },
-                {
-                    "weekday": "plantão 24hrs",
-                    "hours": []
-                }
-            ]
+                "schedules": [
+                    {
+                        "weekday": "segunda á sexta",
+                        "hours": [
+                            { "from": "08:00", "to": "12:00" },
+                            { "from": "13:30", "to": "17:30" }
+                        ]
+                    },
+                    {
+                        "weekday": "sábado",
+                        "hours": [
+                            { "from": "09:00", "to": "12:30" }
+                        ]
+                    }
+                ]
+            }
         },
         {
-            "code": 113639,
-            "crmv": "SC 57251",
-            "fullname": "Clínica MaisVet",
-            "type": "cli",
-            "location": {
-                "zipcode": "89042-060",
-                "address": "Pedro Zimmermann",
-                "number": "401 - Sala 202",
-                "district": "Salto do Norte",
-                "city": "Blumenau",
-                "state": "SC"
-            },
-            "schedules": [
-                {
-                    "weekday": "segunda á sexta",
-                    "hours": [
-                        { "from": "08:00", "to": "11:00" },
-                        { "from": "12:00", "to": "17:00" }
-                    ]
+            "code": "cli-2982",
+            "crmv": "SC 22014",
+            "fullname": "Clínica Ave do Reino",
+            "image_url_sm": "https://fastly.picsum.photos/id/946/100/100.jpg?hmac=u7Ah3gG60wkjCnJKSOzGud4UBj74jNIOnAaFlvblXaA",
+            "image_url_md": "https://fastly.picsum.photos/id/946/200/200.jpg?hmac=a01jNqgHjp0Vj_csHXBpEttrSyo1vFrUTL1fwgKYG0Y",
+            "occupation": "Aves Exóticas, Silvestres e Domésticas",
+            "experience": "+10",
+            "start_date": "5 set 2007",
+            "available": true,
+            "evaluation": 4.9,
+            "info": {
+                "location": {
+                    "zipcode": "89240-530",
+                    "address": "Miguel de Freitas Júnior",
+                    "number": "33",
+                    "district": "Sete Lagoas",
+                    "city": "Blumenau",
+                    "state": "SC"
                 },
-                {
-                    "weekday": "sábado",
-                    "hours": [
-                        { "from": "08:00", "to": "12:00" },
-                        { "from": "13:00", "to": "16:00" }
-                    ]
-                }
-            ]
-        },
-        {
-            "code": 739920,
-            "crmv": "SC 38101",
-            "fullname": "Franciele Menes Razzaghi",
-            "type": "vet",
-            "location": {
-                "zipcode": "89126-330",
-                "address": "Enrique Afonso de Souza",
-                "number": "9",
-                "district": "Fortaleza",
-                "city": "Blumenau",
-                "state": "SC"
-            },
-            "schedules": [
-                {
-                    "weekday": "segunda á sexta",
-                    "hours": [
-                        { "from": "08:00", "to": "12:00" },
-                        { "from": "13:30", "to": "17:30" }
-                    ]
-                },
-                {
-                    "weekday": "sábado",
-                    "hours": [
-                        { "from": "09:00", "to": "12:30" }
-                    ]
-                }
-            ]
+                "schedules": [
+                    {
+                        "weekday": "segunda á sexta",
+                        "hours": [
+                            { "from": "08:00", "to": "12:00" },
+                            { "from": "13:30", "to": "17:30" }
+                        ]
+                    },
+                    {
+                        "weekday": "sábado",
+                        "hours": [
+                            { "from": "09:00", "to": "15:00" }
+                        ]
+                    },
+                    {
+                        "weekday": "feriados",
+                        "hours": [
+                            { "from": "08:00", "to": "17:00" }
+                        ]
+                    }
+                ]
+            }
         }
     ]
 }
