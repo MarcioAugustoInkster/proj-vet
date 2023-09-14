@@ -21,8 +21,9 @@
   padding: 0;
 }
 .main {
-  margin: 16px 8px 32px 8px;
   position: relative;
+  margin: 0 8px 32px 8px;
+  padding-top: 70px;
 }
 .section {
   padding: 16px 8px;

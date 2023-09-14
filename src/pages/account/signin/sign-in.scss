@@ -8,6 +8,7 @@
         flex-direction: column;
         align-items: center;
         margin-top: 50px;
+        z-index: 0;
         &__portrait {
             position: absolute;
             display: flex;
