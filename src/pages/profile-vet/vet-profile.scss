@@ -58,6 +58,7 @@
             }
             &__content {
                 width: 100%;
+                padding-right: 4px;
                 &__header {
                     margin-top: 16px;
                     &__h1, &__h4 {
@@ -73,7 +74,6 @@
                     &__h4 {
                         font-size: 16px;
                         color: var(--cyan-dark);
-                        margin-left: 16px
                     }
                 }
                 &__panel {
@@ -215,18 +215,7 @@
                             font-size: 16px;
                         }
                         &__h4 {
-                            font-size: 12px;
-                        }
-                    }
-                    &__panel {
-                        &__section {
-                            &__s-row {
-                                &__s-col {
-                                    &__text, &__label {
-                                        font-size: 11px;
-                                    }
-                                }
-                            }
+                            font-size: 13px;
                         }
                     }
                 }

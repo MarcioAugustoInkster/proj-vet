@@ -118,6 +118,9 @@ strong {
 .hr-2 {
   margin: 32px 110px;
 }
+.hr-2-md {
+  margin: 32px 80px;
+}
 .f-row {
   display: flex;
   flex-wrap: wrap;

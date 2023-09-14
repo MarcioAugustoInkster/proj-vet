@@ -9,10 +9,18 @@ const Navbar = () => {
         { text: 'Sobre', link: '/about' },
         { text: 'Matrícula', link: '/conta/matricula' },
     ];
+    const side_items = [
+        { text: 'Cadastro', link: '/conta/cadastro', cname: 'person-circle' },
+        { text: 'Login', link: '/conta/login', cname: 'lock' },
+    ];
+
+    const onCloseMenu = () => {
+        document.getElementById('menu-btn').click();
+    }
 
     return(
         <header className="header">
-            <Link to="/home" className="logo">VetServ</Link>
+            <Link to="/home" className="logo" onClick={onCloseMenu}>VetServ</Link>
             <input className="menu-btn" type="checkbox" id="menu-btn" />
             <label className="menu-icon" htmlFor="menu-btn">
                 <span className="navicon"></span>
@@ -20,16 +28,14 @@ const Navbar = () => {
             <ul className="menu">
                 {menu_items.map((item, index) =>
                 <li key={index}>
-                    <Link to={item.link}>{item.text}</Link>
+                    <Link to={item.link} onClick={onCloseMenu}>{item.text}</Link>
                 </li>)}
             </ul>
             <div className="item">
-                <Link to="/conta/cadastro" className="item-link">
-                    <BootstrapIcon cname="person-circle" size="1" />Cadastro
-                </Link>
-                <Link to="/conta/login" className="item-link">
-                    <BootstrapIcon cname="lock" size="1" />Login
-                </Link>
+                {side_items.map((item, index) =>
+                <Link to={item.link} className="item-link" onClick={onCloseMenu} key={index}>
+                    <BootstrapIcon cname={item.cname} size="1" />{item.text}
+                </Link>)}
             </div>
         </header>
     )

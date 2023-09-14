@@ -1,0 +1,31 @@
+{
+    "data": [
+        {
+            "cname": "compass",
+            "title": "Pesquisa de Serviços",
+            "href": {
+                "link": "",
+                "text": "Procure a hora que quiser"
+            },
+            "description": "Sua ave precisa de atendimento? Com uma busca simples, você poderá consultar os profissionais e clínicas veterinárias mais próximos de você sempre atualizados."
+        },
+        {
+            "cname": "award",
+            "title": "Profissional Qualificado",
+            "href": {
+                "link": "",
+                "text": "Confiança é um destaque"
+            },
+            "description": "Um bom profissional se destaca pelo trabalho, reconhecimento e claro, pelas indicações. Nosso serviço é disponibilizar os melhores profissionais certificados para cuidar de sua ave."
+        },
+        {
+            "cname": "star-half",
+            "title": "Indicação de Sucesso",
+            "href": {
+                "link": "",
+                "text": "Avalie o profissional contratado"
+            },
+            "description": "O resultado do atendimento é muito importante para deixar o profissional em destaque em uma pesquisa. Se você confia no serviço prestado, poderá contar novamente com quem cuida de seu melhor amigo."
+        }
+    ]
+}
