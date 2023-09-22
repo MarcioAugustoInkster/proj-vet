@@ -17,7 +17,7 @@ const MobileInfo = () => {
             </h1>
             <div className="section__location-content__flex-group__group-block__block-flex">
               <div className="section__location-content__flex-group__group-block__block-flex__image">
-                <img src={mapLocation} alt="" width="100%" height="100%" />
+                <img src={mapLocation} alt="" width="100%" height="auto" />
               </div>
               <div className="section__location-content__flex-group__group-block__block-flex__text-group">
                 <p className="section__location-content__flex-group__group-block__block-flex__text-group__block-text">
@@ -46,7 +46,7 @@ const MobileInfo = () => {
             </h1>
             <div className="section__location-content__flex-group__group-block__block-flex row-reverse">
               <div className="section__location-content__flex-group__group-block__block-flex__image">
-                <img src={vetMaps} alt="" width="100%" height="100%" />
+                <img src={vetMaps} alt="" width="100%" height="auto" />
               </div>
               <div className="section__location-content__flex-group__group-block__block-flex__text-group">
                 <p className="section__location-content__flex-group__group-block__block-flex__text-group__block-text">
