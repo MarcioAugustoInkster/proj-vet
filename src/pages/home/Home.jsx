@@ -97,7 +97,7 @@ const Home = () => {
                 <h1 className="content-h1">Busca rápida</h1>
                 <h4 className="content-h4">Informe seu CEP abaixo para localizarmos as áreas mais próximas de sua região</h4>
                 <form onSubmit={onClickSearch}>
-                    <div className="flex">
+                    <div className="display-flex">
                         <div className="input-box">
                             <input 
                                 type="text" 
