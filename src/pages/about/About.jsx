@@ -5,7 +5,7 @@ import './about.scss';
 
 const About = () => {
     return (
-        <section className="section" style={{backgroundColor: '#fff'}}>
+        <section className="section bg-birds-sunset" style={{backgroundColor: '#fff'}}>
             <div className="section-header">
                 <h1 className="section-h1">Sobre a VetServ</h1>
             </div>
@@ -23,21 +23,19 @@ const About = () => {
             </div>
             <hr className="hr-2-md" />
             <div className="section__list-content">
-                <div className="section__list-content__list">
-                    {resultData.data.map((item, index) =>
-                    <div className="section__list-content__list__row" key={index}>
-                        <div className="section__list-content__list__row__list-row">
-                            <BootstrapIcon cname={item.cname} size="4" />
-                            <div className="section__list-content__list__row__list-row__box">
-                                <h1>{item.title}</h1>
-                                {item.href.link.length > 0
-                                ? <Link to={item.href.link} className="section__list-content__list__row__list-row__box__r-link">{item.href.text}</Link>
-                                : <span>{item.href.text}</span>}
-                            </div>
+                {resultData.data.map((item, index) =>
+                <div className="section__list-content__row" key={index}>
+                    <div className="section__list-content__row__list-row">
+                        <BootstrapIcon cname={item.cname} size="4" />
+                        <div className="section__list-content__row__list-row__box">
+                            <h1>{item.title}</h1>
+                            {item.href.link.length > 0
+                            ? <Link to={item.href.link} className="section__list-content__row__list-row__box__r-link">{item.href.text}</Link>
+                            : <span>{item.href.text}</span>}
                         </div>
-                        <p className="section__list-content__list__row__list-text">{item.description}</p>
-                    </div>)}
-                </div>
+                    </div>
+                    <p className="section__list-content__row__list-text">{item.description}</p>
+                </div>)}
             </div>
             <hr className="hr-2-md" />
             <div className="section__segment">

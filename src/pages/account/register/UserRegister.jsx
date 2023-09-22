@@ -43,7 +43,7 @@ const UserRegister = () => {
             <form role="form" className="form" onSubmit={onRegisterSubmit}>
                 <div className="form-group">
                     <div className="f-row">
-                        <div className="f-col f-col">
+                        <div className="f-col f-col-12">
                             <InputTextRef 
                                 cid="textregfullname" 
                                 icon="person"
@@ -51,7 +51,7 @@ const UserRegister = () => {
                                 required={true}
                             />
                         </div>
-                        <div className="f-col f-col">
+                        <div className="f-col f-col-12">
                             <InputEmail 
                                 cid="emailregemail" 
                                 icon="at"
@@ -59,7 +59,7 @@ const UserRegister = () => {
                                 required={true}
                             />
                         </div>
-                        <div className="f-col f-col-sm">
+                        <div className="f-col f-col-7">
                             <InputText 
                                 cid="textreguserid" 
                                 icon="person-badge"
@@ -68,7 +68,7 @@ const UserRegister = () => {
                                 pholder="CPF"
                             />
                         </div>
-                        <div className="f-col f-col-sm">
+                        <div className="f-col f-col-6">
                             <InputText 
                                 cid="textregtelephone" 
                                 icon="telephone"
@@ -77,7 +77,7 @@ const UserRegister = () => {
                                 pholder="Telefone"
                             />
                         </div>
-                        <div className="f-col f-col-sm">
+                        <div className="f-col f-col-6">
                             <InputText 
                                 cid="textregphone" 
                                 icon="phone"
@@ -86,7 +86,7 @@ const UserRegister = () => {
                                 pholder="Celular" 
                             />
                         </div>
-                        <div className="f-col f-col-md">
+                        <div className="f-col f-col-6">
                             <InputPassword 
                                 cid="pswdreguserpswd" 
                                 icon="lock"
@@ -94,7 +94,7 @@ const UserRegister = () => {
                                 required={true}
                             />
                         </div>
-                        <div className="f-col f-col-md">
+                        <div className="f-col f-col-6">
                             <InputPassword 
                                 cid="pswdreguserpswdrpt" 
                                 icon="lock"
@@ -106,7 +106,7 @@ const UserRegister = () => {
                 </div>
                 <div className="form-group">
                     <div className="f-row">
-                        <div className="f-col f-col-sm">
+                        <div className="f-col f-col-5">
                             <InputText 
                                 cid="textregzpicode"
                                 value={zipCode}
@@ -115,42 +115,42 @@ const UserRegister = () => {
                                 pholder="CEP"
                             />
                         </div>
-                        <div className="f-col f-col-xl">
+                        <div className="f-col f-col-8">
                             <InputTextRef 
                                 cid="textregaddress" 
                                 icon="signpost-split"
                                 pholder="Endereço" 
                             />
                         </div>
-                        <div className="f-col f-col-xs">
+                        <div className="f-col f-col-4">
                             <InputTextRef 
                                 cid="textregaddnumber" 
                                 icon="123"
                                 pholder="Número" 
                             />
                         </div>
-                        <div className="f-col f-col-md">
+                        <div className="f-col f-col-6">
                             <InputTextRef 
                                 cid="textreglocalref" 
                                 icon="house"
                                 pholder="Complemento" 
                             />
                         </div>
-                        <div className="f-col f-col-md">
+                        <div className="f-col f-col-6">
                             <InputTextRef 
                                 cid="textregdistrict" 
                                 icon="compass"
                                 pholder="Bairro" 
                             />
                         </div>
-                        <div className="f-col f-col-md">
+                        <div className="f-col f-col-6">
                             <InputTextRef 
                                 cid="textregcity" 
                                 icon="geo"
                                 pholder="Cidade" 
                             />
                         </div>
-                        <div className="f-col f-col-md">
+                        <div className="f-col f-col-6">
                             <Select 
                                 items={statesData.states}
                                 cid="selreguf" 

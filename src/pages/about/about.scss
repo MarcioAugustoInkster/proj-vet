@@ -1,4 +1,10 @@
 .section {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    &.bg-birds-sunset {
+        background-image: url('../../assets/images/backgrounds/contrast-birds-at-sunset-wallpaper.png');
+    }
     &__header {
         text-align: center;
         font-family: 'Arial';
@@ -39,17 +45,20 @@
         &__content {
             &__paragraph {
                 font-family: 'Calibri';
-                font-size: 15px;
+                font-size: 16px;
                 text-align: justify;
-                color: var(--grey-blue);
+                color: var(--white);
                 text-indent: 1.5rem;
                 margin-bottom: 1rem;
                 padding: 0 4px;
+                text-shadow: 1px 1px 1px var(--strong-grey);
                 line-height: 1;
             }
             &__sub-header {
                 font-family: 'Tahoma';
                 text-indent: 1.8rem;
+                color: var(--white);
+                text-shadow: 1px 1px 1px var(--strong-grey);
                 margin-bottom: 1rem;
             }
         }
@@ -58,58 +67,61 @@
         }
     }
     &__list-content {
-        display: flex;
-        justify-content: center;
-        &__list {
-            &__row {
-                &:not(:first-child) {
-                    margin-top: 16px;
-                }
-                &__list-row {
-                    display: flex;
-                    align-items: center;
-                    margin-bottom: 16px;
-                    padding: 8px 16px;
-                    background: var(--aqua-marine);
-                    border: 1px solid var(--strong-grey);
-                    border-radius: 6px;
-                    -webkit-border-radius: 6px;
-                    -moz-border-radius: 6px;
-                    box-shadow: 2px 2px 4px var(--strong-grey);
-                    &__box {
-                        margin-left: 12px;
-                        &__r-link {
-                            display: inline-block;
-                            color: var(--yellow);
-                            text-shadow: 1px 1px 1px var(--strong-grey);
-                            &:active, &:hover {
-                                color: var(--yellow-green);
-                                text-decoration: underline;
-                            }
-                        }
-                        h1, span {
-                            color: var(--soft-white);
-                            text-shadow: 1px 1px 1px var(--soft-black);
-                        }
-                        h1 {
-                            font-size: 24px;
-                        }
-                        span {
-                            font-size: 16px;
+        width: 100%;
+        margin: 0 auto;
+        box-sizing: content-box;
+        &__row {
+            &:not(:first-child) {
+                margin-top: 16px;
+            }
+            &__list-row {
+                display: flex;
+                align-items: center;
+                margin-bottom: 16px;
+                padding: 8px 16px;
+                background: var(--aqua-marine);
+                border: 1px solid var(--strong-grey);
+                border-radius: 6px;
+                -webkit-border-radius: 6px;
+                -moz-border-radius: 6px;
+                box-shadow: 2px 2px 4px var(--strong-grey);
+                &__box {
+                    margin-left: 12px;
+                    &__r-link {
+                        display: inline-block;
+                        color: var(--yellow);
+                        text-shadow: 1px 1px 1px var(--strong-grey);
+                        &:active, &:hover {
+                            color: var(--yellow-green);
+                            text-decoration: underline;
                         }
                     }
-                }
-                &__list-text {
-                    font-family: 'Candara';
-                    font-size: 14px;
-                    margin: 0 8px;
-                    text-indent: 1.5rem;
-                    text-align: justify;
-                    color: var(--cyan-dark);
-                    text-shadow: 1px 1px 1px var(--low-grey);
-                    line-height: 1;
+                    h1, span {
+                        color: var(--soft-white);
+                        text-shadow: 1px 1px 1px var(--soft-black);
+                    }
+                    h1 {
+                        font-size: 24px;
+                    }
+                    span {
+                        font-size: 16px;
+                    }
                 }
             }
+            &__list-text {
+                font-family: 'Candara';
+                font-size: 14px;
+                margin: 0 8px;
+                text-indent: 1.5rem;
+                text-align: justify;
+                word-wrap: break-word;
+                color: var(--white);
+                text-shadow: 1px 1px 1px var(--soft-black);
+                line-height: 1;
+            }
+        }
+        @media screen and (min-width: 500px){
+            width: 400px;
         }
     }
 }

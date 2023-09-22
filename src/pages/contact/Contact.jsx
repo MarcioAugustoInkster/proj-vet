@@ -19,7 +19,7 @@ const Contact = () => {
             <form role="form" className="form" onSubmit={onRegisterSubmit}>
                 <div className="form-group">
                     <div className="f-row">
-                        <div className="f-col f-col">
+                        <div className="f-col f-col-12">
                             <InputTextRef 
                                 cid="textcttfullname" 
                                 icon="person"
@@ -27,7 +27,7 @@ const Contact = () => {
                                 required={true}
                             />
                         </div>
-                        <div className="f-col f-col">
+                        <div className="f-col f-col-12">
                             <InputTextRef 
                                 cid="textcttemail" 
                                 icon="at"
@@ -35,7 +35,7 @@ const Contact = () => {
                                 required={true}
                             />
                         </div>
-                        <div className="f-col f-col">
+                        <div className="f-col f-col-12">
                             <TextArea
                                 pholder="Digite sua mensagem..."
                                 required={true}

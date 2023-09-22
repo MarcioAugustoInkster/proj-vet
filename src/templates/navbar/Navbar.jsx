@@ -5,9 +5,9 @@ import BootstrapIcon from '../../components/icons/BootstrapIcon';
 const Navbar = () => {
     const menu_items = [
         { text: 'Home', link: '/home' },
+        { text: 'Histórico', link: '/conta/historico-consultas' },
         { text: 'Contato', link: '/contato' },
-        { text: 'Sobre', link: '/about' },
-        { text: 'Matrícula', link: '/conta/matricula' },
+        { text: 'Sobre', link: '/sobre' },
     ];
     const side_items = [
         { text: 'Cadastro', link: '/conta/cadastro', cname: 'person-circle' },

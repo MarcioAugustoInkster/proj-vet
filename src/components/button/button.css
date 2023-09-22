@@ -1,8 +1,8 @@
-.button {
+.default-button {
     font-family: 'Candara';
     font-size: 18px;
     padding: 8px 16px;
-    background-color: var(--aqua-marine);
+    background-color: var(--aqua-marine) !important;
     color: var(--white);
     border: 1px solid var(--grey);
     border-radius: 6px;
@@ -12,7 +12,7 @@
     box-shadow: 2px 2px 4px var(--strong-grey);
     outline: none;
 }
-.button:active {
+.default-button:active {
     background-color: var(--cyan-dark);
     text-shadow: 1px 1px 1px var(--soft-black);
     box-shadow: 2px 2px 4px inset var(--black);

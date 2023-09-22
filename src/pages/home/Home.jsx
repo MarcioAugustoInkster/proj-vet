@@ -82,22 +82,22 @@ const Home = () => {
             </div>
             <BlockView
                 image={picSmartphoneWithGpsNavigator}
-                title="Busca por Atendimento"
+                title="Consulta de Atendimentos"
                 text="Verifique a disponibilidade dos profissionais próximos de sua região e agende sua consulta de forma rápida e prática."
-                link="/agendamento"
+                link="/mobilidade"
             />
             <BlockView
                 image={picFemaleVetDoctor}
                 title="Profissionais Qualificados"
                 text="Os profissionais da saúde animal estão sempre preparados e capacitados para atender seu animal."
-                link="/home"
+                link="/atendimento"
             />
             <hr className="hr-2" />
             <div className="grid-content">
                 <h1 className="content-h1">Busca rápida</h1>
                 <h4 className="content-h4">Informe seu CEP abaixo para localizarmos as áreas mais próximas de sua região</h4>
                 <form onSubmit={onClickSearch}>
-                    <div className="grid-control">
+                    <div className="flex">
                         <div className="input-box">
                             <input 
                                 type="text" 

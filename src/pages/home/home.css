@@ -13,11 +13,6 @@
     text-align: center;
     margin-bottom: 16px;
 }
-.grid-control {
-    display: flex;
-    align-items: center;
-    margin: 8px 0 16px 0;
-}
 .grid-status {
     display: flex;
     flex-direction: column;
@@ -32,7 +27,6 @@
     font-size: 18px;
     padding: 6px 10px;
     border-radius: 6px 0 0 6px;
-    width: 160px;
     background-color: var(--white);
     border: 1px solid var(--low-grey);
     box-shadow: 2px 2px 4px inset var(--low-grey);
@@ -49,8 +43,8 @@
     border-color: var(--aqua-marine);
 }
 .button-search {
-    padding: 8px;
-    background-color: var(--aqua-marine);
+    padding: 4px 8px;
+    background-color: var(--aqua-marine) !important;
     border: 1px solid var(--cyan-dark);
     border-radius: 0 6px 6px 0;
     box-shadow: 2px 2px 4px var(--grey);

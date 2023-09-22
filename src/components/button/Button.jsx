@@ -7,7 +7,7 @@ const Button = (props) => {
     return (
         <button 
             type={type === undefined ? 'button' : type} 
-            className="button"
+            className="default-button"
         >{text}</button>
     )
 }

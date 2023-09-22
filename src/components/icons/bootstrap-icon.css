@@ -1,6 +1,5 @@
 .b-icon {
-    display: flex;
-    align-items: center;
+    display: block;
 }
 .i-white {
     color: var(--soft-white);

@@ -1,0 +1,50 @@
+{
+    "data": {
+        "code": 717025,
+        "pet_name": "Polentinha",
+        "birth_date": "15/08/2022",
+        "acquiring_date": "21/08/2022",
+        "gender": "f",
+        "mutation": "Arlequim Silvestre",
+        "colors": [ "bochecha laranja", "amarelo", "cinza escuro" ],
+        "width": 2.85,
+        "height": 6.72,
+        "length": 29.5,
+        "weight": 97.45,
+        "blood_type": "",
+        "allergies": [],
+        "reports": [
+            {
+                "visit_code": "QRH84-Y31N",
+                "visit_datetime": "05/06/2023 14:28",
+                "general_checkup": [
+                    "inspeção ocular", "pesagem", "testado reflexos", "descartado a presença de parasitas"
+                ],
+                "pacient_prescribing": "Apresentou fezes aguado. Quase todo momento imóvel. Não comeu nem bebeu água. Não interage com o dono nem com os outras áves da casa",
+                "exams": [
+                    "coleta de sangue",
+                    "coleta de fezes"
+                ],
+                "symptoms": [ "fraqueza", "diarréia", "sem fome ou sede" ],
+                "medicaments": [
+                    "Vitril 200mg"
+                ],
+                "laboratory": "",
+                "diagnosys": [
+                    "alimentação irregular",
+                    "dado como alimento: arroz, bolacha e apenas sementes tradicionais",
+                    "raramente frutas ou verduras"
+                ],
+                "general_infos": [
+                    "Ração Extrusada - Nutrópica ou Megazoo",
+                    "Seguir tabela nutricional"
+                ],
+                "descriptions": "Após os exames, coletas e repouso, o animal apresenou fome e sede além de retornar os estímulos normais para interagir com o ambiente",
+                "vaccines": [],
+                "has_ring": false,
+                "confirm_intern": false,
+                "confirm_return": false
+            }
+        ]
+    }
+}

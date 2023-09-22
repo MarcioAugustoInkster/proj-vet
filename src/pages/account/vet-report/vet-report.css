@@ -1,0 +1,111 @@
+.section-report {
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.report-view {
+    margin: 0 auto;
+    width: 560px;
+    box-sizing: content-box;
+}
+.content-view {
+    margin-top: 16px;
+    padding: 8px 4px;
+    border: 1px solid var(--grey);
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+}
+.table-view {
+    margin: 0 auto;
+    width: 560px;
+}
+.table-view th, .table-view td {
+    padding-bottom: 16px;
+    font-family: 'Lucida Sans Unicode';
+    font-size: 14px;
+}
+.table-view th {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    color: var(--grey-blue);
+    width: 150px;
+    text-align: right;
+    padding-right: 4px;
+}
+.table-view td {
+    text-align: left;
+    padding-left: 4px;
+}
+.item-list {
+    padding-left: 25px;
+}
+.item-list li {
+    list-style: disc;
+    line-height: 1.2;
+}
+@media screen and (max-width: 632px) {
+    .report-view {
+        width: 100%;
+    }
+    .table-view {
+        width: 100%;
+    }
+    .table-view th {
+        width: auto;
+    }
+    .r-col-sm {
+        width: calc(100% - 2px) !important;
+    }
+    .r-col-md {
+        width: calc(50% - 2px) !important;
+    }
+    .r-col-lg {
+        width: calc(100% - 2px) !important;
+    }
+    .r-col-xl {
+        width: calc(100% - 2px) !important;
+    }
+}
+.rep-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.rep-row > .rep-col, .rep-col .col-title {
+    font-family: 'Lucida Sans Unicode';
+    font-size: 16px;
+}
+.rep-row > .rep-col {
+    padding: 4px 0;
+}
+.rep-col .col-title {
+    margin-right: 2px;
+}
+.rep-col .col-text {
+    margin-left: 2px;
+}
+.rep-col.r-col-xs {
+    width: calc(20% - 2px);
+}
+.rep-col.r-col-sm {
+    width: calc(25% - 2px);
+}
+.rep-col.r-col-md {
+    width: calc(50% - 2px);
+}
+.rep-col.r-col-lg {
+    width: calc(75% - 2px);
+}
+.rep-col.r-col-xl {
+    width: calc(100% - 2px);
+}
+.col-list {
+    padding-left: 15%;
+}
+.col-list li {
+    list-style: square;
+    text-transform: capitalize;
+    font-size: 14px;
+}
